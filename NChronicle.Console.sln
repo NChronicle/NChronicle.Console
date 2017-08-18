@@ -3,11 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NChronicle.Console", "NChronicle.Console.csproj", "{6908522A-FDD9-450E-9BC9-C3D8FF59540D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NChronicle.Console_NetFx", "NChronicle.Console_NetFx.csproj", "{6908522A-FDD9-450E-9BC9-C3D8FF59540D}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Wiki", "Wiki", "{E93D5371-746F-42D9-9662-422784CA4A7C}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Meta", "Meta", "{E93D5371-746F-42D9-9662-422784CA4A7C}"
+	ProjectSection(SolutionItems) = preProject
+		NChronicle.Console.nuspec = NChronicle.Console.nuspec
+	EndProjectSection
 EndProject
 Project("{7CF6DF6D-3B04-46F8-A40B-537D21BCA0B4}") = "NChronicle.Console", "NChronicle.Console.shfbproj", "{42AA9722-20DF-4E5C-B051-ECCB360461D8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{0B2A6D8E-00D1-439A-AE95-83BCA4EDEC30}"
+	ProjectSection(SolutionItems) = preProject
+		.gitlab-ci.yml = .gitlab-ci.yml
+		Build.ps1 = Build.ps1
+		BuildFormattedWiki.ps1 = BuildFormattedWiki.ps1
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NChronicle.Console_NetStandard", "NChronicle.Console_NetStandard.csproj", "{CB5DD812-A6B4-43D2-A8E4-9047F991FCC1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,11 +35,16 @@ Global
 		{42AA9722-20DF-4E5C-B051-ECCB360461D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{42AA9722-20DF-4E5C-B051-ECCB360461D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{42AA9722-20DF-4E5C-B051-ECCB360461D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB5DD812-A6B4-43D2-A8E4-9047F991FCC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB5DD812-A6B4-43D2-A8E4-9047F991FCC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB5DD812-A6B4-43D2-A8E4-9047F991FCC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB5DD812-A6B4-43D2-A8E4-9047F991FCC1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{42AA9722-20DF-4E5C-B051-ECCB360461D8} = {E93D5371-746F-42D9-9662-422784CA4A7C}
+		{0B2A6D8E-00D1-439A-AE95-83BCA4EDEC30} = {E93D5371-746F-42D9-9662-422784CA4A7C}
 	EndGlobalSection
 EndGlobal

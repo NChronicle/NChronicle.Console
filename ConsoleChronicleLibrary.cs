@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading;
 using System.Xml;
 using System.Xml.Schema;
 using NChronicle.Console.Configuration;
 using NChronicle.Console.Delegates;
 using NChronicle.Core.Interfaces;
 using NChronicle.Core.Model;
+using System.Threading;
 
 namespace NChronicle.Console {
 
@@ -60,7 +60,7 @@ namespace NChronicle.Console {
 
 		private string FormulateOutput (ChronicleRecord record, string pattern) {
 			var output = pattern;
-			var currentTime = TimeZoneInfo.ConvertTimeFromUtc (DateTime.UtcNow, this._configuration.TimeZone);
+			var currentTime = TimeZoneInfo.ConvertTime (DateTime.UtcNow, TimeZoneInfo.Utc, this._configuration.TimeZone);
 			foreach (var token in this.FindTokens (pattern)) {
 				var tokenBody = token.Substring (1, token.Length - 2);
 				var tokenIsDate = tokenBody.StartsWith ("%");

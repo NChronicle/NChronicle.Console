@@ -11,7 +11,7 @@
     <!-- AssemblyName, Name, and RootNamespace are not used by SHFB but Visual Studio adds them anyway -->
     <AssemblyName>Documentation</AssemblyName>
     <RootNamespace>Documentation</RootNamespace>
-    <Name>Documentation</Name>
+    <Name>NChronicle.Console_Wiki</Name>
     <!-- SHFB properties -->
     <FrameworkVersion>.NET Framework 4.0</FrameworkVersion>
     <OutputPath>bin\_Wiki\</OutputPath>
@@ -25,10 +25,10 @@
     <DisableCodeBlockComponent>False</DisableCodeBlockComponent>
     <CleanIntermediates>True</CleanIntermediates>
     <WarnOnMissingSourceContext>False</WarnOnMissingSourceContext>
-    <SourceCodeBasePath>NChronicle.Console\</SourceCodeBasePath>
+    <SourceCodeBasePath>.\</SourceCodeBasePath>
     <MissingTags>Summary, Parameter, Returns, AutoDocumentCtors, TypeParameter, AutoDocumentDispose</MissingTags>
     <DocumentationSources>
-      <DocumentationSource sourceFile="NChronicle.Console.csproj" />
+      <DocumentationSource sourceFile="NChronicle.Console_NetFx.csproj" />
     </DocumentationSources>
     <HelpFileVersion>1.0.2</HelpFileVersion>
     <MaximumGroupParts>2</MaximumGroupParts>

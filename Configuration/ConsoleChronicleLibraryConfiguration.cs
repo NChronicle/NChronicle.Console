@@ -270,7 +270,8 @@ namespace NChronicle.Console.Configuration {
         /// <seealso cref="NotListening"/>
         public void ListeningToAllLevels() {
             this.Levels.Clear();
-            foreach (var levelName in typeof (ChronicleLevel).GetEnumNames()) {
+            var enumNames = Enum.GetNames(typeof(ChronicleLevel));
+            foreach (var levelName in enumNames) {
                 ChronicleLevel level;
                 Enum.TryParse(levelName, out level);
                 this.Levels[level] = 0;
@@ -430,7 +431,7 @@ namespace NChronicle.Console.Configuration {
             this.BackgroundColors[ChronicleLevel.Warning] = backgroundColor;
         }
 
-        #region Xml Serialization
+#region Xml Serialization
         /// <summary>
         /// Required for XML serialization, this method offers no functionality.
         /// </summary>
@@ -674,7 +675,7 @@ namespace NChronicle.Console.Configuration {
                             try {
                                 this.WithTimeZone(TimeZoneInfo.FindSystemTimeZoneById(timeZone));
                             }
-                            catch (TimeZoneNotFoundException) {
+                            catch (Exception) {
                                 throw new XmlException($"Unexpected library configuration for {nameof(ConsoleChronicleLibrary)}, value '{timeZone}' for {nameof(this.TimeZone)} is not a valid TimeZone ID.");
                             }
                             break;
@@ -722,7 +723,7 @@ namespace NChronicle.Console.Configuration {
             writer.WriteElementString(nameof(this.OutputPattern), this.OutputPattern);
             writer.WriteElementString(nameof(this.TimeZone), this.TimeZone.Id);
         }
-        #endregion
+#endregion
 
     }
 
