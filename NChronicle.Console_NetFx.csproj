@@ -24,7 +24,7 @@
     <DefineConstants>TRACE;DEBUG;NETFX</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>bin\Debug\NChronicle.Console.XML</DocumentationFile>
+    <DocumentationFile>bin\Debug\netfx4.0\NChronicle.Console.XML</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -35,7 +35,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <RegisterForComInterop>false</RegisterForComInterop>
-    <DocumentationFile>bin\Release\NChronicle.Console.XML</DocumentationFile>
+    <DocumentationFile>bin\Release\netfx4.0\NChronicle.Console.XML</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup>
     <StartupObject />

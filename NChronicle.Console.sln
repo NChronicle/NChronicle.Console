@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.16
+VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NChronicle.Console_NetFx", "NChronicle.Console_NetFx.csproj", "{6908522A-FDD9-450E-9BC9-C3D8FF59540D}"
 EndProject
@@ -11,6 +11,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Meta", "Meta", "{E93D5371-7
 	EndProjectSection
 EndProject
 Project("{7CF6DF6D-3B04-46F8-A40B-537D21BCA0B4}") = "NChronicle.Console", "NChronicle.Console.shfbproj", "{42AA9722-20DF-4E5C-B051-ECCB360461D8}"
+	ProjectSection(ProjectDependencies) = postProject
+		{CB5DD812-A6B4-43D2-A8E4-9047F991FCC1} = {CB5DD812-A6B4-43D2-A8E4-9047F991FCC1}
+		{6908522A-FDD9-450E-9BC9-C3D8FF59540D} = {6908522A-FDD9-450E-9BC9-C3D8FF59540D}
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{0B2A6D8E-00D1-439A-AE95-83BCA4EDEC30}"
 	ProjectSection(SolutionItems) = preProject
@@ -19,7 +23,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{0B2A6D8E
 		BuildFormattedWiki.ps1 = BuildFormattedWiki.ps1
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NChronicle.Console_NetStandard", "NChronicle.Console_NetStandard.csproj", "{CB5DD812-A6B4-43D2-A8E4-9047F991FCC1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NChronicle.Console_NetStandard", "NChronicle.Console_NetStandard.csproj", "{CB5DD812-A6B4-43D2-A8E4-9047F991FCC1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -46,5 +50,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{42AA9722-20DF-4E5C-B051-ECCB360461D8} = {E93D5371-746F-42D9-9662-422784CA4A7C}
 		{0B2A6D8E-00D1-439A-AE95-83BCA4EDEC30} = {E93D5371-746F-42D9-9662-422784CA4A7C}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {029123B1-8788-465E-892B-0AD8A285B512}
 	EndGlobalSection
 EndGlobal
