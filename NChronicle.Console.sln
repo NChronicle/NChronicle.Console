@@ -19,7 +19,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{0B2A6D8E-00D1-439A-AE95-83BCA4EDEC30}"
 	ProjectSection(SolutionItems) = preProject
 		.gitlab-ci.yml = .gitlab-ci.yml
-		Build.ps1 = Build.ps1
 		BuildFormattedWiki.ps1 = BuildFormattedWiki.ps1
 	EndProjectSection
 EndProject
